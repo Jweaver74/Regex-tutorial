@@ -1,10 +1,13 @@
-# Title (replace with your title)
+# Regex Tutorial
 
-Introductory paragraph (replace this with your text)
+## Introduction
+ Regex, short for regular expression, is a powerful tool used for pattern matching and manipulating text. It provides a concise and flexible way to search, match, and replace strings based on specific patterns.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+A regular expression is a sequence of characters that defines a search pattern. It consists of regular characters (e.g., letters and digits) and special characters called metacharacters that define the rules for pattern matching.
+
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
 ## Table of Contents
 
@@ -23,8 +26,25 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+The anchor is what starts and ends the regular expression. The ^ is the start anchor and the $ is the end anchor. The ^ anchor is used to match the beginning of a string and the $ anchor is used to match the end of a string.
+
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
+The anchors are the ^ and the $.This code specifically is saying that we are looking for something that starts with `/^([a-z0-9_\.-]+)`.
+
+We will define what everything else inside the parenthesis means in the next section, but the anchor is the first thing we see.
 
 ### Quantifiers
+A quantifier is a metacharacter that specifies how many instances of a character, group, or character class must be present in the input for a match to be found. The most common quantifiers are` ?,`` *,` and` +`. For our code the regex `xyz+` matches the string` xyz` followed by one or more `z` characters.
+
+`([a-z0-9_\.-]+)`
+
+This will match any string that contains `a-z, 0-9, _, .,` or `-.` The quantifier is the +. This code specifically is saying that we are looking for something that starts with 
+
+`/^([a-z0-9_\.-]+).
+
+This will match any string that contains `a-z, 0-9, _, .,` or `-.` The quantifier is the `+` means that it has to have at least one of the characters in the brackets. The `+` is the quantifier.
+
 
 ### OR Operator
 
