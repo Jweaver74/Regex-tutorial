@@ -37,7 +37,7 @@ A regex is also considered a literal so it must be wrapped in `/`.
 `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
 
-The anchors are the ^ and the $. This code specifically is saying that we are looking for something that starts with
+The anchors are the `^` and the `$`. This code specifically is saying that we are looking for something that starts with
  `^([a-z0-9_\.-+]+)` , and ends with `([a-z\.]{2,6})$`.
 
 
@@ -86,17 +86,42 @@ u	Unicode	Makes the expression assume individual characters as code points, not 
 You can add a flag by using forward slashes `//`
 
 ### Grouping and Capturing
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
+The guidelines for grouping and capturing are the parenthesis `()`.
+The first group is `([a-z0-9_\.-]+)` and the second group is `([\da-z\.-]+)` and the third group is `([a-z\.]{2,6})`.
+
 
 ### Bracket Expressions
 
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
+The bracket expression is the `[]` and is used to match a single character that is contained within the brackets.
+`[a-z0-9_\.-]` will match any character that is a-z, 0-9, _, ., or -.
+
 ### Greedy and Lazy Match
+
+Our email regex does not use a greedy or lazy match. A greedy match will match the longest possible string and a lazy match will match the shortest possible string.
 
 ### Boundaries
 
+Our email regex does not use boundaries. Boundaries are used to match a character that is at the beginning or end of a word. \b is used to match a word boundary and \B is used to match a non-word boundary.
+
+
 ### Back-references
+
+Our email regex does not use back-references. A back-reference is used to match the same text that was matched by a capturing group earlier in the regex. They are specified with a backslash and a single digit, \2.
 
 ### Look-ahead and Look-behind
 
+Our email regex does not use look-ahead or look-behind. A look-ahead is used to match a pattern only if it is followed by another pattern. A look-behind is used to match a pattern only if it is preceded by another pattern.The look-ahead usually represented by `?`. While the look-behind is represented by `?<=`.
+
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+This tutorial was created by Jason Weaver using a an email regex for my tutorial exampling.
+
+[Github](https://github.com/Jweaver74)
+
+[LinkedIn](https://www.linkedin.com/in/jason-weaver-5a0b3a1b4/)
+
+[Email](jamaweaver@yahoo.com)

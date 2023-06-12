@@ -54,10 +54,19 @@
 
   ## Contributing
   [Contributor Covenant](https://www.contributor-covenant.org/)
+  https://www.codeguage.com/courses/regexp/flags
+
+  https://www.computerhope.com/jargon/r/regex.htm
+
+  https://courses.bootcampspot.com/courses/3150/assignments/49940?module_item_id=909103
+
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
   
 
 
   ## Challenge
+
+  Regex is challenging to learn. It is a very powerful tool that can be used to search for specific patterns in a string. It can be used to validate input, search for specific patterns, and replace text.
   
 
 
