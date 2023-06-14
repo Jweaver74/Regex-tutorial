@@ -76,12 +76,17 @@ The `\d` is present the the email code saying that it must match an a-z characte
 
 A regex Flag is not used within our email code. Regex has 6 different flags that all have a different purpose. 
 
-i	Ignore Casing	Makes the expression search case-insensitively.
-g	Global	Makes the expression search for all occurrences.
-s	Dot All	Makes the wild character . match newlines as well.
-m	Multiline	Makes the boundary characters ^ and $ match the beginning and ending of every single line instead of the beginning and ending of the whole string.
-y	Sticky	Makes the expression start its searching from the index indicated in its lastIndex property.
-u	Unicode	Makes the expression assume individual characters as code points, not code units, and thus match 32-bit characters as well.
+i-	Ignore Casing	Makes the expression search case-insensitively.
+
+g-	Global	Makes the expression search for all occurrences.
+
+s-	Dot All	Makes the wild character . match newlines as well.
+
+m-	Multiline	Makes the boundary characters ^ and $ match the beginning and ending of every single line instead of the beginning and ending of the whole string.
+
+y-	Sticky	Makes the expression start its searching from the index indicated in its lastIndex property.
+
+u-	Unicode	Makes the expression assume individual characters as code points, not code units, and thus match 32-bit characters as well.
 
 You can add a flag by using forward slashes `//`
 
@@ -101,16 +106,16 @@ The bracket expression is the `[]` and is used to match a single character that 
 
 ### Greedy and Lazy Match
 
-Our email regex does not use a greedy or lazy match. A greedy match will match the longest possible string and a lazy match will match the shortest possible string.
+Our email regex does not use a greedy or lazy match. A greedy match will match the longest possible string noted with a `+` and a lazy match will match the shortest possible string,a regular quantifier is made lazy by appending a `?` question mark to it..
 
 ### Boundaries
 
-Our email regex does not use boundaries. Boundaries are used to match a character that is at the beginning or end of a word. \b is used to match a word boundary and \B is used to match a non-word boundary.
+Our email regex does not use boundaries. Boundaries are used to match a character that is at the beginning or end of a word. `\b` is used to match a word boundary and `\B` is used to match a non-word boundary.
 
 
 ### Back-references
 
-Our email regex does not use back-references. A back-reference is used to match the same text that was matched by a capturing group earlier in the regex. They are specified with a backslash and a single digit, \2.
+Our email regex does not use back-references. A back-reference is used to match the same text that was matched by a capturing group earlier in the regex. They are specified with a backslash and a single digit, `\2`.
 
 ### Look-ahead and Look-behind
 
@@ -118,10 +123,9 @@ Our email regex does not use look-ahead or look-behind. A look-ahead is used to 
 
 ## Author
 
-This tutorial was created by Jason Weaver using a an email regex for my tutorial exampling.
+This tutorial was created by Jason Weaver using an email regex for my tutorial exampling.
 
 [Github](https://github.com/Jweaver74)
 
-[LinkedIn](https://www.linkedin.com/in/jason-weaver-5a0b3a1b4/)
 
 [Email](jamaweaver@yahoo.com)
